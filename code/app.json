@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/fishingmap/fishingmap",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+    "list": [
+      {
+        "pagePath": "pages/fishingmap/fishingmap",
+        "selectedIconPath": "images/tab_fish_select.png",
+        "iconPath": "images/tab_fish.png",
+        "text": "渔情"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "selectedIconPath": "images/tab_star_select.png",
+        "iconPath": "images/tab_star.png",
+        "text": "战报"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/tab_people_select.png",
+        "iconPath": "images/tab_people.png",
+        "text": "我的"
+      }
+    ]
+  }
+  ,
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "垂钓伴侣",
+    "navigationBarTextStyle":"black"
+  }
+}

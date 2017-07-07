@@ -1,0 +1,4 @@
+/* pages/fishingmap/fishingmap.wxss */
+.container{
+  height: 100%
+}
