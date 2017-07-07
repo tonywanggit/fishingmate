@@ -15,7 +15,12 @@ Page({
   },
 
   controltap(e) {
-    this.setCurPostion();
+    if (e.controlId == 1){
+      this.setCurPostion();
+    }else if(e.controlId == 2){
+      this.getLngLat();
+    }
+
   },
 
   initMap: function () {
@@ -37,7 +42,18 @@ Page({
               height: 32
             },
             clickable: true
+          },{
+            id: 2,
+            iconPath: '/images/map_curpos.png',
+            position: {
+              left: res.windowWidth / 2 - 16,
+              top: res.windowHeight / 2 - 30,
+              width: 32,
+              height: 32
+            },
+            clickable: true
           }]
+
         })
       }
     })
@@ -46,14 +62,31 @@ Page({
   setCurPostion:function(){
     var _this = this;
     wx.getLocation({
-      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬
       success: function (res) {
         _this.setData({
           latitude: res.latitude,
-          longitude: res.longitude,
-        });
+          longitude: res.longitude
+        })
       }
     });
+  },
+
+  getLngLat: function () {
+    var that = this;
+    this.mapCtx.getCenterLocation({
+      success: function (res) {
+
+
+        wx.showToast({
+          title: "经度：" + res.longitude + ", 纬度：" + res.latitude,
+          icon: 'success',
+          duration: 2000
+        });
+        
+
+      }
+    })
   }
 
 })
