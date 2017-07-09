@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.5151pic.fishing</groupId>
-            <artifactId>fishingmate-facade</artifactId>
+            <artifactId>fishingmate-domain</artifactId>
         </dependency>
     </dependencies>
 </project>

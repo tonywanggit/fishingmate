@@ -14,6 +14,10 @@
     <dependencies>
         <dependency>
             <groupId>com.5151pic.fishing</groupId>
+            <artifactId>fishingmate-facade</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.5151pic.fishing</groupId>
             <artifactId>fishingmate-infrastructure</artifactId>
         </dependency>
     </dependencies>

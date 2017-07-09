@@ -188,7 +188,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <excludes>
-                        <exclude>**/*.properties</exclude>
+                        <exclude>**/logback.xml</exclude>
                     </excludes>
                 </configuration>
             </plugin>

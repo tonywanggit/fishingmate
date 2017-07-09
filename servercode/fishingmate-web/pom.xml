@@ -18,6 +18,7 @@
         <dependency>
             <groupId>com.5151pic.fishing</groupId>
             <artifactId>fishingmate-facade-impl</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
