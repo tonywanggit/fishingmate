@@ -18,7 +18,8 @@ Page({
     if (e.controlId == 1){
       this.setCurPostion();
     }else if(e.controlId == 2){
-      this.getLngLat();
+      //this.getLngLat();
+      this.getFishingMap();
     }
 
   },
@@ -87,6 +88,23 @@ Page({
 
       }
     })
-  }
+  },
 
+  getFishingMap: function(){
+    wx.request({
+      url: 'https://fishing.5151pic.com/fishingmate/fishingmap.json', //仅为示例，并非真实的接口地址
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data)
+
+        wx.showToast({
+          title: "版本号：" + res.data.version,
+          icon: 'success',
+          duration: 2000
+        });
+      }
+    })
+  }
 })
