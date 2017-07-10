@@ -9,11 +9,11 @@
          http://www.springframework.org/schema/tx/spring-tx.xsd"
 	default-autowire="byName">
 
-	<bean id="promotionMongoUri" class="com.mongodb.MongoClientURI">
-		<constructor-arg value="${mongo.promotion.uri}"></constructor-arg>
+	<bean id="fishingMateMongoUri" class="com.mongodb.MongoClientURI">
+		<constructor-arg value="${mongo.fishingmate.uri}"></constructor-arg>
 	</bean>
 
-	<bean id="promotionMongoClient" class="com.mongodb.MongoClient">
-		<constructor-arg ref="promotionMongoUri"></constructor-arg>
+	<bean id="fishingMateMongoClient" class="com.mongodb.MongoClient">
+		<constructor-arg ref="fishingMateMongoUri"></constructor-arg>
 	</bean>
 </beans>

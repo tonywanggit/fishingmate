@@ -28,7 +28,7 @@ public class FacadeAspect {
 
     private static final Logger DEFAULT_LOGGER = LoggerFactory.getLogger(FacadeAspect.class);
 
-    @Pointcut("execution(* com.fashingmate.facade.*Facade.*(*)) && args(req)")
+    @Pointcut("execution(* com.fishingmate.facade.*Facade.*(*)) && args(req)")
     public void executAccountFacade(BaseRequest req) {
     }
 
