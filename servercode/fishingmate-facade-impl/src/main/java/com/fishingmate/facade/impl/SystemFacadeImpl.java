@@ -23,7 +23,8 @@ public class SystemFacadeImpl implements SystemFacade {
     public String version() {
         return "{"
                 + "\"ip\":\"" + NetUtil.getHostIp() + "\","
-                + "\"1.0.1\":\"2017-07-09.1 first deploy.\""
+                + "\"1.0.1\":\"2017-07-09.1 first deploy.\","
+                + "\"1.0.2\":\"2017-07-15.1 add create fishing map api.\""
                 + "}";
     }
 }

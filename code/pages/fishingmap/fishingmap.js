@@ -19,7 +19,7 @@ Page({
       this.setCurPostion();
     }else if(e.controlId == 2){
       //this.getLngLat();
-      this.getFishingMap();
+      this.showFunAction();
     }
 
   },
@@ -105,6 +105,25 @@ Page({
           duration: 2000
         });
       }
+    })
+  },
+
+  showFunAction: function () {
+    var that = this;
+    wx.showActionSheet({
+      itemList: ['发表鱼获', '在此放竿', '就地空军'],
+      success: function (res) {
+        that.navAction(res.tapIndex)
+      },
+      fail: function (res) {
+        console.log(res.errMsg)
+      }
+    })
+  },
+
+  navAction:function(tapIndex){
+    wx.navigateTo({
+      url: '../publish/fish'
     })
   }
 })

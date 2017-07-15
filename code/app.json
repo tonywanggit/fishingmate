@@ -2,7 +2,8 @@
   "pages":[
     "pages/fishingmap/fishingmap",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/publish/fish"
   ],
   "tabBar":{
     "list": [
