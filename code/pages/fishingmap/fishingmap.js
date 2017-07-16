@@ -2,6 +2,7 @@ Page({
   data: {
   },
   onReady: function (e) {
+    console.log('onReady');
     this.initMap();
     this.setCurPostion();
   },
@@ -15,6 +16,8 @@ Page({
   },
 
   controltap(e) {
+    console.log('controltap');
+
     if (e.controlId == 1){
       this.setCurPostion();
     }else if(e.controlId == 2){
@@ -89,34 +92,18 @@ Page({
       }
     })
   },
-
-  getFishingMap: function(){
-    wx.request({
-      url: 'https://fishing.5151pic.com/fishingmate/fishingmap.json', //仅为示例，并非真实的接口地址
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        console.log(res.data)
-
-        wx.showToast({
-          title: "版本号：" + res.data.version,
-          icon: 'success',
-          duration: 2000
-        });
-      }
-    })
-  },
-
+  
   showFunAction: function () {
     var that = this;
     wx.showActionSheet({
-      itemList: ['发表鱼获', '在此放竿', '就地空军'],
+      itemList: ['发表鱼获', '在此放竿', '就地参军'],
       success: function (res) {
-        that.navAction(res.tapIndex)
+        if (!res.cancel) {
+          that.navAction(res.tapIndex);
+        }
       },
       fail: function (res) {
-        console.log(res.errMsg)
+        console.log("action fail:" + res.errMsg)
       }
     })
   },
@@ -124,6 +111,6 @@ Page({
   navAction:function(tapIndex){
     wx.navigateTo({
       url: '../publish/fish'
-    })
+    });
   }
 })

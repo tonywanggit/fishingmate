@@ -1,1 +1,23 @@
 /* pages/publish/fish.wxss */
+
+.section{
+  padding: 10px;
+}
+
+.section__title{
+  padding-bottom: 5px;
+}
+
+label{
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.btn-area{
+  padding: 10px;
+}
+
+
+checkbox-group{
+  flex-direction:row;
+}

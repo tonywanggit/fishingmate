@@ -1,9 +1,10 @@
 // pages/publish/fish.js
 var server = require('../../utils/server.js');
 var util = require('../../utils/util.js');
+
 Page({
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
 
     var data = {
       "userId": 10,
@@ -14,7 +15,7 @@ Page({
       "latitude": 30
     };
    
-    server.postToServer("api/fishingmap/create", data)
+    server.postToServer("api/fishingmap/create", data);
   },
   formReset: function () {
     console.log('form发生了reset事件')
