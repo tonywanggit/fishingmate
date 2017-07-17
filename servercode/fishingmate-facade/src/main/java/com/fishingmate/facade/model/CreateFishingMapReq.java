@@ -36,7 +36,7 @@ public class CreateFishingMapReq extends BaseRequest {
     private FishingMapEnum fishingMapType;
 
     /**
-     * 垂钓方式
+     * 垂钓方式：0 - 传统钓，1 - 台钓，2 - 海竿，3 - 筏钓，4 - 路亚
      */
     @NotNull(message = "无效的垂钓方式")
     private FishingTypeEnum fishingType;
