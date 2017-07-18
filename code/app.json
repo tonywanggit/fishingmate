@@ -1,14 +1,14 @@
 {
   "pages":[
-    "pages/publish/fish",
     "pages/fishingmap/fishingmap",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/publish/fish"
   ],
   "tabBar":{
     "list": [
       {
-        "pagePath": "pages/publish/fish",
+        "pagePath": "pages/fishingmap/fishingmap",
         "selectedIconPath": "images/tab_fish_select.png",
         "iconPath": "images/tab_fish.png",
         "text": "渔情"
