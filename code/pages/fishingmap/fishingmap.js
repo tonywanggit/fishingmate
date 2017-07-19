@@ -48,12 +48,12 @@ Page({
             clickable: true
           },{
             id: 2,
-            iconPath: '/images/map_curpos.png',
+            iconPath: '/images/location.png',
             position: {
               left: res.windowWidth / 2 - 16,
               top: res.windowHeight / 2 - 30,
-              width: 32,
-              height: 32
+              width: 18,
+              height: 30
             },
             clickable: true
           }]

@@ -1,4 +1,25 @@
+function formatDate(date) {
+  var year = date.getFullYear()
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+  var second = date.getSeconds()
+
+
+  return [year, month, day].map(formatNumber).join('-');
+}
+
 function formatTime(date) {
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+
+
+  return [hour, minute].map(formatNumber).join(':');
+}
+
+function formatDateTime(date) {
   var year = date.getFullYear()
   var month = date.getMonth() + 1
   var day = date.getDate()
@@ -17,5 +38,6 @@ function formatNumber(n) {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  formatDate: formatDate
 }

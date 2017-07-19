@@ -12,13 +12,16 @@ Page({
     this.setData({
       latitude: options.latitude,
       longitude: options.longitude,
+      fishingDate: util.formatDate(new Date()),
+      endDate: util.formatDate(new Date()),
+      fishingTime: util.formatTime(new Date()),
       markers: [{
         iconPath: "/images/location.png",
         id: 0,
         latitude: options.latitude,
         longitude: options.longitude,
-        width: 25,
-        height: 47
+        width: 18,
+        height: 30
       }]
     });
   },
@@ -104,12 +107,18 @@ Page({
     })
   },
 
+  bindTimeChange: function(e){
+    this.setData({
+      fishingTime: e.detail.value
+    })
+  },
+
   showModel: function(){
     var that = this;
     wx.showToast({
       title: '发布成功',
       icon: 'success',
-      duration: 2000,
+      duration: 500,
       complete: function (res) {
         that.setData({
           showShareButton: true,

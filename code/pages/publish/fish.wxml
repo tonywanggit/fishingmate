@@ -1,39 +1,65 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
   <view class="mapView">  
     <map id="map" longitude="{{longitude}}" latitude="{{latitude}}"  markers="{{markers}}"
-        scale="13" show-location class="map">
+        scale="15" show-location class="map">
     </map>
   </view>
-  <view class="section section_gap">
-     <picker mode="date" value="{{fishingDate}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-      <view class="picker">
-        作钓时间: {{fishingDate}}
-      </view>
-    </picker>
+
+
+  <view class="weui-cells__title"></view>
+  <view class="weui-cells weui-cells_after-title">
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">作钓时间</view>
+          <picker mode="date" value="{{fishingDate}}" end="{{endDate}}" bindchange="bindDateChange">
+            <view class="picker" style="padding-right:5px;">
+              {{fishingDate}}
+            </view>
+          </picker>
+          <picker mode="time" value="{{fishingTime}}" bindchange="bindTimeChange">
+            <view class="picker">
+              {{fishingTime}}
+            </view>
+          </picker>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">战报类型</view>
+          <view class="weui-cell__ft">上鱼</view>
+      </navigator>
   </view>
-  <view class="section section_gap">
-    <view class="section__title">垂钓方式</view>
-    <radio-group name="radio-group">
-      <label><radio value="radio1" checked/>台钓</label>
-      <label><radio value="radio2"/>传统钓</label>
-      <label><radio value="radio2"/>路亚</label>
-    </radio-group>
-  </view>
-  <view class="section section_gap">
-    <view class="section__title">垂钓标签</view>
+
+ <view class="weui-cells__title">鱼获种类</view>
+  <view class="weui-cells weui-cells_after-title">
     <checkbox-group name="checkbox">
       <view>
         <label><checkbox value="checkbox1"/>狂拉鲫鱼</label>
         <label><checkbox value="checkbox2"/>上大鲤鱼</label>
         <label><checkbox value="checkbox3"/>白条疯狂</label>
       </view>
-      <view>
+      <view style="padding-top:5px;">
         <label><checkbox value="checkbox4"/>黄军光临</label>
         <label><checkbox value="checkbox6"/>鳊鱼连杆</label>
         <label><checkbox value="checkbox5"/>爆竿断线</label>
       </view>  
     </checkbox-group>
   </view>
+
+   <view class="weui-cells__title">垂钓标签</view>
+  <view class="weui-cells weui-cells_after-title">
+    <checkbox-group name="checkbox">
+      <view>
+        <label><checkbox value="checkbox1"/>狂拉鲫鱼</label>
+        <label><checkbox value="checkbox2"/>上大鲤鱼</label>
+        <label><checkbox value="checkbox3"/>白条疯狂</label>
+      </view>
+      <view style="padding-top:5px;">
+        <label><checkbox value="checkbox4"/>黄军光临</label>
+        <label><checkbox value="checkbox6"/>鳊鱼连杆</label>
+        <label><checkbox value="checkbox5"/>爆竿断线</label>
+      </view>  
+    </checkbox-group>
+  </view>
+
+
   <view class="btn-area">
     <button type="primary" formType="submit" class="{{showSaveButton?'show':'hide'}}">确认发表</button>
     <button type="primary" open-type="share" class="{{showShareButton?'show':'hide'}}">分享到朋友圈</button>
