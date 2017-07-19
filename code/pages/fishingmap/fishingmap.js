@@ -80,14 +80,10 @@ Page({
     var that = this;
     this.mapCtx.getCenterLocation({
       success: function (res) {
-
-
-        wx.showToast({
-          title: "经度：" + res.longitude + ", 纬度：" + res.latitude,
-          icon: 'success',
-          duration: 2000
+        console.log(res);
+        wx.navigateTo({
+          url: '../publish/fish?latitude=' + res.latitude + '&longitude=' + res.longitude
         });
-        
 
       }
     })
@@ -109,8 +105,6 @@ Page({
   },
 
   navAction:function(tapIndex){
-    wx.navigateTo({
-      url: '../publish/fish'
-    });
+    this.getLngLat();
   }
 })

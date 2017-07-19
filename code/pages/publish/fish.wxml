@@ -1,7 +1,7 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
-  <view class="section section_gap">
-    <map id="map" longitude="121.62" latitude="31.29" scale="14" 
-      show-location class="map">
+  <view class="mapView">  
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}"  markers="{{markers}}"
+        scale="13" show-location class="map">
     </map>
   </view>
   <view class="section section_gap">

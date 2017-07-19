@@ -7,6 +7,58 @@ Page({
     showShareButton: false,
     showSaveButton: true,
   },
+
+  onLoad:function(options){
+    this.setData({
+      latitude: options.latitude,
+      longitude: options.longitude,
+      markers: [{
+        iconPath: "/images/location.png",
+        id: 0,
+        latitude: options.latitude,
+        longitude: options.longitude,
+        width: 25,
+        height: 47
+      }]
+    });
+  },
+
+  initMap: function () {
+    // 使用 wx.createMapContext 获取 map 上下文
+    this.mapCtx = wx.createMapContext('map');
+    var _this = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        _this.setData({
+          map_width: res.windowWidth,
+          map_height: res.windowHeight,
+          controls: [{
+            id: 1,
+            iconPath: '/images/map_position.png',
+            position: {
+              left: 10,
+              top: res.windowHeight - 50,
+              width: 32,
+              height: 32
+            },
+            clickable: true
+          }, {
+            id: 2,
+            iconPath: '/images/map_curpos.png',
+            position: {
+              left: res.windowWidth / 2 - 16,
+              top: res.windowHeight / 2 - 30,
+              width: 32,
+              height: 32
+            },
+            clickable: true
+          }]
+
+        })
+      }
+    })
+  },
+
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
