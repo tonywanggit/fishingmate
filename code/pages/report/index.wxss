@@ -1,0 +1,15 @@
+/* pages/report/index.wxss */
+
+.filter {
+  margin-top: 0;
+  border-top: none;
+}
+
+.filter_cell{
+  padding: 0;
+}
+
+.filter_select::before{
+  margin-top: -7px;
+  transform:rotate(135deg);
+}

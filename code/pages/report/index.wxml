@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells filter">
+      <view class="weui-cell filter_cell">
+        <view class="weui-cell__bd">
+          <picker bindchange="bindDistanceChange" value="{{distanceIndex}}" range="{{distance}}">
+            <view class="weui-select filter_select">{{distance[distanceIndex]}}</view>
+          </picker>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindFishingmapTypeChange" value="{{fishmapTypeIndex}}" range="{{fishmapType}}">
+            <view class="weui-select filter_select">{{fishmapType[fishmapTypeIndex]}}</view>
+          </picker>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindOrderByChange" value="{{orderByIndex}}" range="{{orderBy}}">
+            <view class="weui-select filter_select">{{orderBy[orderByIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="../../images/pic_160.png" style="width: 50px; height: 50px; display: block" />
+          <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view>
+        </view>
+        <view class="weui-cell__bd">
+          <view>联系人名称</view>
+          <view style="font-size: 13px;color: #888888;">摘要信息</view>
+        </view>
+      </view>
+    </view>  
+    <view class="weui-cells">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="../../images/pic_160.png" style="width: 50px; height: 50px; display: block" />
+          <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view>
+        </view>
+        <view class="weui-cell__bd">
+          <view>联系人名称</view>
+          <view style="font-size: 13px;color: #888888;">摘要信息</view>
+        </view>
+      </view>
+    </view>  
+
+  </view>
+</view>

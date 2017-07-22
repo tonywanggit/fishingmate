@@ -68,7 +68,7 @@ Page({
       console.log(res.target)
     }
     return {
-      title: '战报：Tony 2017-07-18 上鱼',
+      title: 'Tony发来战报',
       path: '/pages/publish/fish',
       success: function (res) {
         // 转发成功
@@ -121,9 +121,14 @@ Page({
       duration: 500,
       complete: function (res) {
         that.setData({
-          showShareButton: true,
           showSaveButton: false
         });
+
+        setTimeout(function () {
+          that.setData({
+            showShareButton: true
+          });
+        }, 500);
       }
     })
   }
