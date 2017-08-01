@@ -13,3 +13,38 @@
   margin-top: -7px;
   transform:rotate(135deg);
 }
+
+.weui-badge{
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+}
+
+.bg_green{
+  background-color: green;
+}
+
+.bg_yellow{
+  background-color: yellowgreen;
+}
+
+.weui-cell_body{
+  margin-top: 3px;
+  font-size: 13px;
+  color: #888888;
+}
+
+.weui-cell__hd{
+  color: #888888;
+}
+
+.weui-cell__label{
+  border-radius: 3px; 
+  border: 1px solid #888888;
+  font-size: 12px;
+  padding: 1px 3px;
+}
+
+.weui-cell__rd{
+  margin-top: 5px;
+}

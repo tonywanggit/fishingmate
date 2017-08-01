@@ -25,26 +25,61 @@
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
         <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-          <image src="../../images/pic_160.png" style="width: 50px; height: 50px; display: block" />
-          <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view>
+          <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL5VIHB46aCEQUfL7KJyQRfiakOtvnvf6rjltUx5MorpFzUaqfKgSw6YaMNJKojYWjn8xA3kZMmHbQ/0" style="width: 50px; height: 50px; display: block" />
+          
         </view>
         <view class="weui-cell__bd">
-          <view>联系人名称</view>
-          <view style="font-size: 13px;color: #888888;">摘要信息</view>
+          <view>Tony 昨天12:30上鱼</view>
+          <view class="weui-cell_body">台钓+4.5m</view>
+        </view>
+        <view class="weui-cell__rd">
+          <view class="weui-cell__label">1.2km</view>
+          <view class="weui-badge bg_green">上</view>
         </view>
       </view>
-    </view>  
-    <view class="weui-cells">
       <view class="weui-cell">
         <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-          <image src="../../images/pic_160.png" style="width: 50px; height: 50px; display: block" />
-          <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</view>
+          <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL5VIHB46aCEQUfL7KJyQRfiakOtvnvf6rjltUx5MorpFzUaqfKgSw6YaMNJKojYWjn8xA3kZMmHbQ/0" style="width: 50px; height: 50px; display: block" />
+          
         </view>
         <view class="weui-cell__bd">
-          <view>联系人名称</view>
-          <view style="font-size: 13px;color: #888888;">摘要信息</view>
+          <view>叶大师 今天 12:30 上鱼</view>
+          <view class="weui-cell_body">台钓+4.5m</view>
+        </view>
+        <view class="weui-cell__rd">
+          <view class="weui-cell__label">1.2km</view>
+          <view class="weui-badge bg_green">上</view>
         </view>
       </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL5VIHB46aCEQUfL7KJyQRfiakOtvnvf6rjltUx5MorpFzUaqfKgSw6YaMNJKojYWjn8xA3kZMmHbQ/0" style="width: 50px; height: 50px; display: block" />
+          
+        </view>
+        <view class="weui-cell__bd">
+          <view>Tony 07-01 12:30 空军</view>
+          <view class="weui-cell_body">筏钓 15m水深</view>
+        </view>
+        <view class="weui-cell__rd">
+          <view class="weui-cell__label">800m</view>
+          <view class="weui-badge">空</view>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL5VIHB46aCEQUfL7KJyQRfiakOtvnvf6rjltUx5MorpFzUaqfKgSw6YaMNJKojYWjn8xA3kZMmHbQ/0" style="width: 50px; height: 50px; display: block" />
+          
+        </view>
+        <view class="weui-cell__bd">
+          <view>Tony 前天12:30 放杆</view>
+          <view class="weui-cell_body">海竿 爆炸钩</view>
+        </view>
+        <view class="weui-cell__rd">
+          <view class="weui-cell__label">1.2km</view>
+          <view class="weui-badge bg_yellow">放</view>
+        </view>
+      </view>
+      
     </view>  
 
   </view>
