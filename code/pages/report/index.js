@@ -6,7 +6,7 @@ Page({
    */
   data: {
     distance: ["1km", "3km", "5km", "10km", "全城"],
-    distanceIndex: 1,
+    distanceIndex: 0,
 
     fishmapType: ["所有战报", "只看上鱼", "只看空军", "只看放杆"],
     fishmapTypeIndex: 0,
